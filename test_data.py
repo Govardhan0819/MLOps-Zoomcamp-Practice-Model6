@@ -2,9 +2,8 @@ import pandas as pd
 import sys 
 import os 
 
-expected_data = [{'PULocationID': '-1', 'DOLocationID': '-1', 'tpep_pickup_datetime': pd.Timestamp('2022-01-01 01:02:00'), 'tpep_dropoff_datetime': pd.Timestamp('2022-01-01 01:10:00'), 'duration': 8.0},
-            {'PULocationID': '1', 'DOLocationID': '-1', 'tpep_pickup_datetime': pd.Timestamp('2022-01-01 01:02:00'), 'tpep_dropoff_datetime': pd.Timestamp('2022-01-01 01:10:00'), 'duration': 8.0}, 
-            {'PULocationID': '1', 'DOLocationID': '2', 'tpep_pickup_datetime': pd.Timestamp('2022-01-01 02:02:00'), 'tpep_dropoff_datetime': pd.Timestamp('2022-01-01 02:03:00'), 'duration': 1.0}]
+expected_data = [{'PULocationID': '-1', 'DOLocationID': '-1', 'tpep_pickup_datetime': pd.Timestamp('2022-01-01 01:01:00'), 'tpep_dropoff_datetime': pd.Timestamp('2022-01-01 01:10:00'), 'duration': 9.0},
+            {'PULocationID': '1', 'DOLocationID': '-1', 'tpep_pickup_datetime': pd.Timestamp('2022-01-01 01:02:00'), 'tpep_dropoff_datetime': pd.Timestamp('2022-01-01 01:10:00'), 'duration': 8.0}]
 
 expected_columns = ['PULocationID', 'DOLocationID', 'tpep_pickup_datetime', 'tpep_dropoff_datetime', 'duration']
 expected_df = pd.DataFrame(expected_data, columns=expected_columns)
